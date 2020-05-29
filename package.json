@@ -1,0 +1,12 @@
+{
+  "name": "no-build-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx servor --reload"
+  },
+  "author": "",
+  "license": "ISC"
+}
