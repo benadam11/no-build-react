@@ -5,7 +5,7 @@ import { useForm } from 'https://cdn.pika.dev/react-hook-form';
 function AddNameForm({ onSubmit }) {
   const { register, handleSubmit } = useForm();
   return html`
-    <h3>Add a row:</h3>
+    <h4>Add a row:</h4>
     <form onSubmit=${handleSubmit(onSubmit)}>
       <fieldset>
         <label for="firstName">First Name</label>
@@ -28,6 +28,7 @@ function Table({ data: initialData }) {
   };
 
   return html`
+    <h3>Tables:</h3>
     <table>
       <thead>
         <tr>
