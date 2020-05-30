@@ -168,7 +168,6 @@ function Table() {
       <${TableHeader} dispatch=${dispatch} />
       <tbody>
         ${sortData(data, state.sortOrder, state.sortKey).map((item, i) => {
-          console.log(item);
           return html`<${TableRow} ...${item} key=${i} />`;
         })}
       </tbody>
