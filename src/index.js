@@ -1,16 +1,12 @@
-import { render, html, useState } from './utils.js';
+import { html } from './html.js';
+import { render } from "https://cdn.pika.dev/react-dom";
 
-function App({name}) {
-  const [count, setCount ] = useState(0);
+import Table from './Table.js';
+import makeData from './makeData.js';
 
-  return html`
-    <h1>${count} ${name}</h1>
-    <button onClick=${()=>setCount(count+1)}> Add Count</button>
-    <button onClick=${()=>setCount(count-1)}>Decrease</button>
-  `;
-}
+const data = makeData(10);
 
 render(
-  html` <${App} name='Ben' /> `,
+  html` <${Table} data=${data} /> `,
   document.getElementById('root')
 );
