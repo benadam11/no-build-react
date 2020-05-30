@@ -2,6 +2,7 @@ b {
   margin-left: 4px;
   cursor: pointer;
 }
+
 split {
   display: flex;
   justify-content: space-between;
