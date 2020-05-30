@@ -1,12 +1,11 @@
-import { html } from './html.js';
+import { html } from './utils/html.js';
 import { render } from "https://cdn.pika.dev/react-dom";
-
-import Table from './Table.js';
-import makeData from './makeData.js';
-
-const data = makeData(10);
+import Table from './components/Table.js';
 
 render(
-  html` <${Table} data=${data} /> `,
+  html`
+    <h1>No Build React</h1>
+    <${Table} />
+  `,
   document.getElementById('root')
 );
