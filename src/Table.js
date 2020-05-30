@@ -5,10 +5,15 @@ import { useForm } from 'https://cdn.pika.dev/react-hook-form';
 function AddNameForm({ onSubmit }) {
   const { register, handleSubmit } = useForm();
   return html`
+    <h3>Add a row:</h3>
     <form onSubmit=${handleSubmit(onSubmit)}>
-      <input name="firstName" placeholder="First Name" ref=${register} />
-      <input name="lastName" placeholder="Last Name" ref=${register} />
-      <button type="submit">Submit</button>
+      <fieldset>
+        <label for="firstName">First Name</label>
+        <input name="firstName" placeholder="First Name" ref=${register} />
+        <label for="firstName">First Name</label>
+        <input name="lastName" placeholder="Last Name" ref=${register} />
+        <button type="submit">Submit</button>
+      </fieldset>
     </form>
   `;
 }
