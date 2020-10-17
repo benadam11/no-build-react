@@ -1,4 +1,4 @@
-import { uniqueNamesGenerator, names } from 'https://cdn.pika.dev/unique-names-generator';
+import { uniqueNamesGenerator, names } from 'https://cdn.skypack.dev/unique-names-generator';
 
 const range = (len) => {
   const arr = [];

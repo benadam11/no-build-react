@@ -1,6 +1,6 @@
 import { html } from '../utils/html.js';
-import { useState, useReducer, useEffect } from 'https://cdn.pika.dev/react';
-import { useForm } from 'https://cdn.pika.dev/react-hook-form';
+import { useState, useReducer, useEffect } from 'https://cdn.skypack.dev/react';
+import { useForm } from 'https://cdn.skypack.dev/react-hook-form';
 
 function sortData(data, orderType, sortKey) {
   const localData = data;
