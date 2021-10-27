@@ -41,9 +41,9 @@ function AddNameForm({ onSubmit }) {
       <fieldset>
         <legend>Add a row:</legend>
         <label for="firstName">First Name</label>
-        <input name="firstName" placeholder="First Name" ref=${register} />
+        <input name="firstName" placeholder="First Name" ...${register} />
         <label for="firstName">First Name</label>
-        <input name="lastName" placeholder="Last Name" ref=${register} />
+        <input name="lastName" placeholder="Last Name" ...${register} />
         <button type="submit">Submit</button>
       </fieldset>
     </form>
